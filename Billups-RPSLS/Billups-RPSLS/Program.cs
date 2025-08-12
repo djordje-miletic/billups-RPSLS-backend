@@ -1,11 +1,10 @@
-using Billups.RPLS.DAL.Classes;
-using Billups.RPLS.DAL.Interfaces;
 using Billups.RPSLS.BL.Interfaces;
 using Billups.RPSLS.BL.Services;
 using Billups.RPSLS.Common;
+using Billups.RPSLS.DAL.Classes;
+using Billups.RPSLS.DAL.Interfaces;
 using Billups.RPSLS.DBContext;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +20,7 @@ builder.Services.AddScoped<IChoiceBL, ChoiceBL>();
 
 
 builder.Services.AddScoped<IChoiceDAL, ChoiceDAL>();
+builder.Services.AddScoped<IScoreDAL, ScoreDAL>();
 
 
 builder.Services.AddDbContext<RPSLSDbContext>(opt => opt.UseInMemoryDatabase("RPSLS Database"));

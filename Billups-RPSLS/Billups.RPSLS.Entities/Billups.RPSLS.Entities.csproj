@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Billups.RPSLS.DataModel\Billups.RPSLS.DataModel.csproj" />
+  </ItemGroup>
+
 </Project>

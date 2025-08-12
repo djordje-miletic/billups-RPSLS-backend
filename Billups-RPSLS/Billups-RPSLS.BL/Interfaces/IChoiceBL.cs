@@ -1,4 +1,5 @@
-﻿using Billups.RPSLS.DataModel.Responses;
+﻿using Billups.RPSLS.DataModel.Requests;
+using Billups.RPSLS.DataModel.Responses;
 
 namespace Billups.RPSLS.BL.Interfaces;
 
@@ -8,5 +9,13 @@ public interface IChoiceBL
 
     ChoicesResponse Get();
 
-    PlayResponse Play(int player);
+    PlayResponse Play(PlayRequest player);
+
+    Task<List<ScoreResponse>> Get10RecentResults();
+
+    Task<List<ScoreResponse>> Get10RecentResultsByPlayer(string playerName);
+
+    void Reset();
+
+    Task ResetByPlayer(string playerName);
 }

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace Billups.RPLS.DAL.Interfaces;
+namespace Billups.RPSLS.DAL.Interfaces;
 
 public interface IBaseDAL<T> where T : class
 {

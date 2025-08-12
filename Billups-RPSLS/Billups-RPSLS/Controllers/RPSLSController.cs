@@ -29,6 +29,32 @@ public class RPSLSController : Controller
     [HttpPost("/play")]
     public ActionResult<ChoicesResponse> Play(PlayRequest request)
     {
-        return Ok(_choiceBL.Play(request.Player));
+        return Ok(_choiceBL.Play(request));
+    }
+
+    [HttpGet("get10RecentResults")]
+    public async Task<ActionResult<List<ScoreResponse>>> Get10RecentResults()
+    {
+        return Ok(await _choiceBL.Get10RecentResults());
+    }
+
+    [HttpGet("get10RecentResultsByPlayer/{playerName}")]
+    public async Task<ActionResult<List<ScoreResponse>>> Get10RecentResults(string playerName)
+    {
+        return Ok(await _choiceBL.Get10RecentResultsByPlayer(playerName));
+    }
+
+    [HttpDelete("reset")]
+    public ActionResult Reset()
+    {
+        _choiceBL.Reset();
+        return Ok();
+    }
+
+    [HttpDelete("resetByPlayer/{playerName}")]
+    public async Task<ActionResult> ResetByPlayer(string playerName)
+    {
+        await _choiceBL.ResetByPlayer(playerName);
+        return Ok();
     }
 }

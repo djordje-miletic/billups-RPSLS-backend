@@ -1,7 +1,6 @@
-﻿using Billups.RPLS.DAL.Interfaces;
-using Billups.RPSLS.Entities;
+﻿using Billups.RPSLS.Entities;
 
-namespace Billups.RPLS.DAL.Interfaces;
+namespace Billups.RPSLS.DAL.Interfaces;
 
 public interface IChoiceDAL : IBaseDAL<ChoiceEntity>
 {

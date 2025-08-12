@@ -1,4 +1,4 @@
-﻿using Billups.RPLS.DAL.Interfaces;
+﻿using Billups.RPSLS.DAL.Interfaces;
 using Billups.RPSLS.DBContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -66,7 +66,6 @@ public class BaseDAL<T> : IBaseDAL<T> where T : class
 
     void IBaseDAL<T>.Insert(T entity)
     {
-
         EntityEntry<T> savedEntity;
         savedEntity = _context.Set<T>().Add(entity);
     }
