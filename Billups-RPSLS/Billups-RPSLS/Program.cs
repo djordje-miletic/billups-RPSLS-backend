@@ -1,3 +1,4 @@
+using Billups.RPSL.Hubs;
 using Billups.RPSLS.BL.Interfaces;
 using Billups.RPSLS.BL.Services;
 using Billups.RPSLS.Common;
@@ -15,15 +16,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 builder.Services.AddScoped<IChoiceBL, ChoiceBL>();
-
 
 builder.Services.AddScoped<IChoiceDAL, ChoiceDAL>();
 builder.Services.AddScoped<IScoreDAL, ScoreDAL>();
 
-
 builder.Services.AddDbContext<RPSLSDbContext>(opt => opt.UseInMemoryDatabase("RPSLS Database"));
+
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -40,6 +40,8 @@ app.UseAuthorization();
 
 app.UseMiddleware<ApplicationExceptionHandler>();
 app.MapControllers();
+
+app.MapHub<GameHub>("/gamehub");
 
 using (var scope = app.Services.CreateScope())
 {
