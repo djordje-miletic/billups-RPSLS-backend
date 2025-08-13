@@ -115,7 +115,7 @@ public class GameHub : Hub
             await Clients.Client(p2).SendAsync("RoundResult", new RoundHistory(moves[p2].Player, moves[p1].Player, ReturnMessage(resultPlayer2)));
 
             ScoreEntity scoreEntityPlayer1 = new ScoreEntity(resultPlayer1, moves[p1].PlayerName);
-            ScoreEntity scoreEntityPlayer2 = new ScoreEntity(resultPlayer2, moves[p1].PlayerName);
+            ScoreEntity scoreEntityPlayer2 = new ScoreEntity(resultPlayer2, moves[p2].PlayerName);
 
             _scoreDAL.Insert(scoreEntityPlayer1);
             _scoreDAL.Insert(scoreEntityPlayer2);
