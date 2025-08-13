@@ -2,6 +2,7 @@
 using Billups.RPSLS.DAL.Interfaces;
 using Billups.RPSLS.DataModel.Enums;
 using Billups.RPSLS.DataModel.Requests;
+using Billups.RPSLS.DataModel.Responses;
 using Billups.RPSLS.DBContext;
 using Billups.RPSLS.Entities;
 using Microsoft.AspNetCore.SignalR;
@@ -96,8 +97,8 @@ public class GameHub : Hub
             ResultEnum resultPlayer1 = moves[p1].Player.Play(moves[p2].Player);
             ResultEnum resultPlayer2 = Player2Result(resultPlayer1);
 
-            await Clients.Client(p1).SendAsync("RoundResult", ReturnMessage(resultPlayer1));
-            await Clients.Client(p2).SendAsync("RoundResult", ReturnMessage(resultPlayer2));
+            await Clients.Client(p1).SendAsync("RoundResult", new RoundHistory(moves[p1].Player, moves[p2].Player, ReturnMessage(resultPlayer1)));
+            await Clients.Client(p2).SendAsync("RoundResult", new RoundHistory(moves[p2].Player, moves[p1].Player, ReturnMessage(resultPlayer2)));
 
             ScoreEntity scoreEntityPlayer1 = new ScoreEntity(resultPlayer1, moves[p1].PlayerName);
             ScoreEntity scoreEntityPlayer2 = new ScoreEntity(resultPlayer2, moves[p1].PlayerName);

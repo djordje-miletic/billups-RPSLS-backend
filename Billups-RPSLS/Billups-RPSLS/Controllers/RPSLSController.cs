@@ -27,7 +27,7 @@ public class RPSLSController : Controller
     }
 
     [HttpPost("/play")]
-    public ActionResult<ChoicesResponse> Play(PlayRequest request)
+    public ActionResult<ChoicesResponse> Play([FromBody] PlayRequest request)
     {
         return Ok(_choiceBL.Play(request));
     }
