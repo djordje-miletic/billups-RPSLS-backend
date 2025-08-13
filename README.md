@@ -18,4 +18,5 @@ In root folder of application there is docker file provided. To run in you need 
 To start app execute following commands:
 
 docker build -t billups.rpsls.api .
+
 docker run -p 8080:8080 -p 8081:8081 billups.rpsls.api
