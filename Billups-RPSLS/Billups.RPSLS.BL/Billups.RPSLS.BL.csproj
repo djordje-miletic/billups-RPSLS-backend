@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Billups-RPLS.DAL\Billups.RPSLS.DAL.csproj" />
+    <ProjectReference Include="..\Billups.RPLS.DAL\Billups.RPSLS.DAL.csproj" />
+    <ProjectReference Include="..\Billups.RPLS.DAL\Billups.RPSLS.DAL.csproj" />
     <ProjectReference Include="..\Billups.RPSLS.DataModel\Billups.RPSLS.DataModel.csproj" />
   </ItemGroup>
 

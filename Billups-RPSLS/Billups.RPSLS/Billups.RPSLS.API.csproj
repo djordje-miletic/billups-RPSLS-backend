@@ -19,8 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Billups-RPSLS.BL\Billups.RPSLS.BL.csproj" />
+    <ProjectReference Include="..\Billups.RPSLS.BL\Billups.RPSLS.BL.csproj" />
     <ProjectReference Include="..\Billups.RPSL.Hubs\Billups.RPSL.Hubs.csproj" />
+    <ProjectReference Include="..\Billups.RPSLS.BL\Billups.RPSLS.BL.csproj" />
     <ProjectReference Include="..\Billups.RPSLS.Common\Billups.RPSLS.Common.csproj" />
     <ProjectReference Include="..\Billups.RPSLS.DBContext\Billups.RPSLS.DBContext.csproj" />
   </ItemGroup>

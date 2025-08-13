@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billups.RPSLS.API", "Billups-RPSLS\Billups.RPSLS.API.csproj", "{C8AB0F31-BF02-4CC1-9D45-DF80C3F21B29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.DBContext", "Billups.RPSLS.DBContext\Billups.RPSLS.DBContext.csproj", "{99176DDA-E840-4FF4-A8A4-1EF4998EAECA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billups.RPSLS.BL", "Billups-RPSLS.BL\Billups.RPSLS.BL.csproj", "{3D41DE46-EB98-4611-B596-C486044EF491}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.DataModel", "Billups.RPSLS.DataModel\Billups.RPSLS.DataModel.csproj", "{F651E99B-CA7D-40F0-8749-7635C0EF5022}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billups.RPSLS.DAL", "Billups-RPLS.DAL\Billups.RPSLS.DAL.csproj", "{409B539D-9296-4C61-8449-9D11E3063CC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.Entities", "Billups.RPSLS.Entities\Billups.RPSLS.Entities.csproj", "{3C648ECB-67BD-4716-9A3B-60E16AD97E35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billups.RPSLS.DBContext", "Billups.RPSLS.DBContext\Billups.RPSLS.DBContext.csproj", "{99176DDA-E840-4FF4-A8A4-1EF4998EAECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.Common", "Billups.RPSLS.Common\Billups.RPSLS.Common.csproj", "{227063DA-05F3-422A-85B7-82E114197B87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billups.RPSLS.DataModel", "Billups.RPSLS.DataModel\Billups.RPSLS.DataModel.csproj", "{F651E99B-CA7D-40F0-8749-7635C0EF5022}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSL.Hubs", "Billups.RPSL.Hubs\Billups.RPSL.Hubs.csproj", "{259EFDA4-26F1-4B3C-B93E-3C54501F745D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billups.RPSLS.Entities", "Billups.RPSLS.Entities\Billups.RPSLS.Entities.csproj", "{3C648ECB-67BD-4716-9A3B-60E16AD97E35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.API", "Billups.RPSLS\Billups.RPSLS.API.csproj", "{BFC87F18-2588-4F41-974B-B9EDC3E8C9C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billups.RPSLS.Common", "Billups.RPSLS.Common\Billups.RPSLS.Common.csproj", "{227063DA-05F3-422A-85B7-82E114197B87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.BL", "Billups.RPSLS.BL\Billups.RPSLS.BL.csproj", "{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billups.RPSL.Hubs", "Billups.RPSL.Hubs\Billups.RPSL.Hubs.csproj", "{259EFDA4-26F1-4B3C-B93E-3C54501F745D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.DAL", "Billups.RPLS.DAL\Billups.RPSLS.DAL.csproj", "{560E9A39-5323-406B-9510-0CCE6E7D51F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,18 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C8AB0F31-BF02-4CC1-9D45-DF80C3F21B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8AB0F31-BF02-4CC1-9D45-DF80C3F21B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8AB0F31-BF02-4CC1-9D45-DF80C3F21B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8AB0F31-BF02-4CC1-9D45-DF80C3F21B29}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D41DE46-EB98-4611-B596-C486044EF491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D41DE46-EB98-4611-B596-C486044EF491}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D41DE46-EB98-4611-B596-C486044EF491}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D41DE46-EB98-4611-B596-C486044EF491}.Release|Any CPU.Build.0 = Release|Any CPU
-		{409B539D-9296-4C61-8449-9D11E3063CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{409B539D-9296-4C61-8449-9D11E3063CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{409B539D-9296-4C61-8449-9D11E3063CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{409B539D-9296-4C61-8449-9D11E3063CC9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{99176DDA-E840-4FF4-A8A4-1EF4998EAECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{99176DDA-E840-4FF4-A8A4-1EF4998EAECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99176DDA-E840-4FF4-A8A4-1EF4998EAECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +45,18 @@ Global
 		{259EFDA4-26F1-4B3C-B93E-3C54501F745D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{259EFDA4-26F1-4B3C-B93E-3C54501F745D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{259EFDA4-26F1-4B3C-B93E-3C54501F745D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC87F18-2588-4F41-974B-B9EDC3E8C9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC87F18-2588-4F41-974B-B9EDC3E8C9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC87F18-2588-4F41-974B-B9EDC3E8C9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC87F18-2588-4F41-974B-B9EDC3E8C9C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{560E9A39-5323-406B-9510-0CCE6E7D51F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560E9A39-5323-406B-9510-0CCE6E7D51F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560E9A39-5323-406B-9510-0CCE6E7D51F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{560E9A39-5323-406B-9510-0CCE6E7D51F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
