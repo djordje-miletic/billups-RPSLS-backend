@@ -72,6 +72,20 @@ public class GameHub : Hub
             if (gameMoves.ContainsKey(groupName))
             {
                 gameMoves[groupName].TryRemove(Context.ConnectionId, out _);
+
+                var opponentId = playerGroups
+                    .Where(kvp => kvp.Value == groupName)
+                    .Select(kvp => kvp.Key)
+                    .FirstOrDefault();
+
+                if (opponentId != null)
+                {
+                    await Clients.Client(opponentId).SendAsync("OpponentDisconnected");
+                    playerGroups.TryRemove(opponentId, out _);
+                    gameMoves[groupName].TryRemove(opponentId, out _);
+                }
+
+                gameMoves.TryRemove(groupName, out _);
             }
         }
 
