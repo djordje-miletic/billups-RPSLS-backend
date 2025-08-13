@@ -2,15 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>Billups.RPSLS.BL</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Billups.RPLS.DAL\Billups.RPSLS.DAL.csproj" />
-    <ProjectReference Include="..\Billups.RPLS.DAL\Billups.RPSLS.DAL.csproj" />
     <ProjectReference Include="..\Billups.RPSLS.DataModel\Billups.RPSLS.DataModel.csproj" />
+    <ProjectReference Include="..\Billups.RPSLS.DBContext\Billups.RPSLS.DBContext.csproj" />
   </ItemGroup>
 
 </Project>

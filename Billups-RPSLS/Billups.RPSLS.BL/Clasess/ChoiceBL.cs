@@ -16,7 +16,7 @@ public class ChoiceBL : IChoiceBL
     private readonly IScoreDAL _scoreDAL;
 
     public ChoiceBL(RPSLSDbContext context,
-        IChoiceDAL choiceDAL, 
+        IChoiceDAL choiceDAL,
         IScoreDAL scoreDAL)
     {
         _context = context;
@@ -30,7 +30,7 @@ public class ChoiceBL : IChoiceBL
 
         List<ChoiceEntity> choiceEntities = _choiceDAL.GetAll();
 
-        choiceEntities.ForEach(choiceEntity => 
+        choiceEntities.ForEach(choiceEntity =>
         {
             result.Add(new ChoicesResponse(choiceEntity.Id, choiceEntity.Choice));
         });
@@ -43,8 +43,8 @@ public class ChoiceBL : IChoiceBL
         Random rand = new Random();
 
         ChoiceEntity choiceEntity = _choiceDAL.GetById(rand.Next(0, 5));
-    
-        if(choiceEntity == null)
+
+        if (choiceEntity == null)
         {
             throw new Exception("Choice not found.");
         }
@@ -73,7 +73,7 @@ public class ChoiceBL : IChoiceBL
         List<ScoreResponse> result = new List<ScoreResponse>();
         List<ScoreEntity> scoreEntities = await _scoreDAL.Get10RecentResults();
 
-        if(scoreEntities is not null && scoreEntities.Count > 0)
+        if (scoreEntities is not null && scoreEntities.Count > 0)
         {
             scoreEntities.ForEach(s =>
             {

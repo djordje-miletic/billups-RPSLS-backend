@@ -4,7 +4,7 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
-EXPOSE 44348
+EXPOSE 8080
 EXPOSE 8081
 
 
@@ -12,10 +12,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Billups.RPSLS.API.csproj", "Billups-RPSLS/"]
-RUN dotnet restore "./Billups-RPSLS/Billups.RPSLS.API.csproj"
+COPY ["./Billups.RPSLS/Billups.RPSLS.API.csproj", "Billups.RPSLS/"]
+RUN dotnet restore "./Billups.RPSLS/Billups.RPSLS.API.csproj"
 COPY . .
-WORKDIR "/src/Billups-RPSLS"
+WORKDIR "/src/Billups.RPSLS"
 RUN dotnet build "./Billups.RPSLS.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
@@ -27,4 +27,4 @@ RUN dotnet publish "./Billups.RPSLS.API.csproj" -c $BUILD_CONFIGURATION -o /app/
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Billups-RPSLS.dll"]
+ENTRYPOINT ["dotnet", "Billups.RPSLS.API.dll"]

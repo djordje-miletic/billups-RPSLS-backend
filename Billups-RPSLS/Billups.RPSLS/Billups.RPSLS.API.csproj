@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Billups_RPSLS</RootNamespace>
+    <RootNamespace>Billups.RPSLS</RootNamespace>
     <UserSecretsId>b54dbe49-1662-40f7-86f3-31d029bc8f53</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Billups.RPSLS.BL\Billups.RPSLS.BL.csproj" />
     <ProjectReference Include="..\Billups.RPSL.Hubs\Billups.RPSL.Hubs.csproj" />
     <ProjectReference Include="..\Billups.RPSLS.BL\Billups.RPSLS.BL.csproj" />
     <ProjectReference Include="..\Billups.RPSLS.Common\Billups.RPSLS.Common.csproj" />

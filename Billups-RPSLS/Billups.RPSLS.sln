@@ -15,9 +15,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSL.Hubs", "Billup
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.API", "Billups.RPSLS\Billups.RPSLS.API.csproj", "{BFC87F18-2588-4F41-974B-B9EDC3E8C9C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.BL", "Billups.RPSLS.BL\Billups.RPSLS.BL.csproj", "{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billups.RPSLS.DAL", "Billups.RPLS.DAL\Billups.RPSLS.DAL.csproj", "{560E9A39-5323-406B-9510-0CCE6E7D51F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B7FAE529-AD5D-4F3B-8F31-4ED4C9C7007F}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billups.RPSLS.BL", "Billups.RPSLS.BL\Billups.RPSLS.BL.csproj", "{C83281B3-3E37-443D-A678-5942448439B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,14 +54,14 @@ Global
 		{BFC87F18-2588-4F41-974B-B9EDC3E8C9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFC87F18-2588-4F41-974B-B9EDC3E8C9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFC87F18-2588-4F41-974B-B9EDC3E8C9C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E8E1E97-1DD8-4A21-B930-3FA3A810B960}.Release|Any CPU.Build.0 = Release|Any CPU
 		{560E9A39-5323-406B-9510-0CCE6E7D51F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{560E9A39-5323-406B-9510-0CCE6E7D51F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{560E9A39-5323-406B-9510-0CCE6E7D51F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{560E9A39-5323-406B-9510-0CCE6E7D51F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83281B3-3E37-443D-A678-5942448439B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83281B3-3E37-443D-A678-5942448439B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83281B3-3E37-443D-A678-5942448439B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83281B3-3E37-443D-A678-5942448439B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

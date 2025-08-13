@@ -11,7 +11,7 @@ public static class PlayHelper
         {
             return ResultEnum.Tie;
         }
-                
+
         var winsAgainst = new (int choice, int[] beats)[]
         {
             (1, new[] { 3, 4 }), // Rock beats Scissors, Lizard
